@@ -1,3 +1,16 @@
 include:
   - project: 'my-group/my-project'
-    file: '/templates/.github-ci-.yml'
+    file: '.github-ci-.yml'
+
+include:
+  - project: 'my-group/my-project'
+    ref: main
+    file: '.github-ci.yml'
+
+  - project: 'my-group/my-project'
+    ref: v1.0.0  # Git Tag
+    file: '.github-ci-.yml'
+
+  - project: 'my-group/my-project'
+    ref: git@github.com:Pemaksa/.gitlab-ci.yml.git # Git SHA
+    file: '.github-ci-.yml'
