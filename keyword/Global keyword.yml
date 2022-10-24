@@ -1,0 +1,9 @@
+default:
+  image: ruby:3.0
+
+rspec:
+  script: bundle exec rspec
+
+rspec 2.7:
+  image: ruby:2.7
+  script: bundle exec rspec

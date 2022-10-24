@@ -1,0 +1,5 @@
+job:
+  script:
+    - echo "An Pemaksa script section."
+  after_script:
+    - echo "Execute this command after the `script` section completes."
